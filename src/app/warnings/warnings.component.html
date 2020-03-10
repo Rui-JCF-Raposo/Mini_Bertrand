@@ -1,0 +1,18 @@
+<div class="warning-container">
+    <div class="removeBookFromShopcart" *ngIf="booksService.warningModalMessageType == 'removeShopcartBook'">
+        <h3>Remover livro do carrinho</h3>
+        <p>Tem a certeza que pretende remover o livro do carrinho de compras?</p>
+    </div>
+    <div class="removeBookFromWishList" *ngIf="booksService.warningModalMessageType == 'removeWishListBook'">
+        <h3>Remover livro da sua lista</h3>
+        <p>Tem a certeza que pretende remover o livro da sua lista de desejos?</p>
+    </div>
+    <div clasS="removeWishList" *ngIf="booksService.warningModalMessageType == 'removeWishList'">
+        <h3>Remover lista de desejos</h3>
+        <p>Tem a certeza que pretende remover a sua lista de desejos?</p>
+    </div>
+    <div class="confirm-options">
+        <button (click)="userConfirmation('no')">Não</button>
+        <button (click)="userConfirmation('yes')">Sim</button>
+    </div>
+</div>

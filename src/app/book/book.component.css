@@ -1,0 +1,108 @@
+.book-box {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    flex: 0 25%;
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+  
+  .book-box h2 {
+    font-weight: 500;
+  }
+  
+  .book-box p {
+    font-weight: 300;
+  }
+  
+  .book-price {
+    position: absolute;
+    top:-20px;
+    right: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-orange);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-gray);
+    box-shadow: 1px 5px 10px rgba(51, 51, 51, 0.249);
+  }
+  
+  .book-box img {
+    width: 150px;
+    height: 200px;
+    box-shadow: 1px 5px 10px rgba(51, 51, 51, 0.249);
+  }
+  
+  .product-info {
+    height: 50px;
+    width: 180px;
+  }
+
+  .book-img-wrapper {
+    position: relative;
+  }
+
+.book-img-wrapper:hover .add-to-shoppcart,
+.book-img-wrapper:hover .add-to-list {
+  display: flex;
+}
+
+.add-to-shoppcart {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    background-color: var(--main-orange);
+    color: #fff;
+    transition: background-color .1s ease-in-out;
+    animation-name: bookEffect;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .add-to-list { 
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 50%; 
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color .1s ease-in-out;
+    animation-name: bookEffect;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .add-to-shoppcart:hover,
+  .add-to-list:hover {
+    background-color: rgb(24, 24, 24);
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .book-authors {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    font-size: 1.4rem;
+  }
+  
+  @keyframes bookEffect {
+    from{height: 0px}
+    to{height: 50px;}
+  }

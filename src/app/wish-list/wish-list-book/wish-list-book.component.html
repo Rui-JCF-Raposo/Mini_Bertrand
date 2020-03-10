@@ -1,0 +1,17 @@
+<div class="book-box">
+    <div class="book-img-wrapper">
+        <img class="book-image" src="{{wishListBookInfo.thumbnailUrl}}">
+        <div class="book-price">{{wishListBookInfo.price | currency: 'EUR'}}</div>
+        <div (click)="removeBook($event)" class="remove-list-item">
+            <img src="../../assets/icons/clientList_Icons/x-button.svg" alt="delete icon">
+        </div>
+    </div>
+    <div class="product-info">
+        <h2 class="book-title">{{wishListBookInfo.title}}</h2>
+        <p class="book-authors">escrito por: <strong>{{wishListBookInfo.authors}}</strong></p>
+    </div>
+    <button type="button" class="list-item-buy" (click)="addBookToShopcart()">COMPRAR</button>
+    <button type="button" class="list-item-reserve">RESERVAR</button>
+    <textarea class="book-coment" placeholder="Inserir comentário"></textarea>
+    <button type="button" class="save-comment d-none">GRAVAR</button>
+</div>

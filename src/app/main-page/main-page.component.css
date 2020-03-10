@@ -1,0 +1,354 @@
+.book-container2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/*-----------------------------------------------*/
+  /*-------------- MAIN SECTION--------------------*/
+  /*-----------------------------------------------*/
+  
+  .homepage-main-col-90 {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 270px);
+    height: auto;
+  }
+  
+  /*----------------- Slider -------------------------*/
+  #slider {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 87px;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer; 
+  }
+  
+  .slider-container:hover .slider-arrow{
+    display: block;
+  }
+  
+  .slider-imgs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  
+  .slider-imgs img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider-arrow {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    padding: 20px 10px;
+    background-color: rgba(135, 135, 135, 0.447);
+    border-radius: 6px;
+  }
+  
+  .slider-arrow:last-child {
+    right: 20px;
+  }
+  
+  .slider-arrow:first-child {
+    left: 20px;
+  }
+  
+  .slider-arrow img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  /*---------------------------------------------*/
+  /*-------------HomePage News Na----------------*/
+  /*---------------------------------------------*/
+  .homepage-nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    margin: 0 0 40px 0;
+    list-style: none;
+    background-color: var(--main-orange);
+    color: #fff;
+  }
+  
+  .homepage-nav ul li {
+    width: 33.3333%;
+    text-align: center;
+  }
+  
+  .homepage-nav ul li a{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .homepage-nav ul li:first-child,
+  .homepage-nav ul li:nth-child(2) {
+    border-right: 1px solid #fff;
+  }
+  
+  /*---------------------------------------------*/
+  /*-------------HomePage News Section-----------*/
+  /*---------------------------------------------*/
+  .homepage-main-col-90 .news,
+  .homepage-main-col-90 .pre-release,
+  .homepage-main-col-90 .events {
+    padding: 10px 40px;
+    margin-top: 0;
+  }
+  
+  .homepage-main-col-90 .news h1,
+  .homepage-main-col-90 .pre-release h1,
+  .homepage-main-col-90 .events h1  {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 0;
+  }
+  
+  
+  /*-----------------HOMEPAGE NEWS --------------*/
+  #news-anchor,
+  #pre-releases-anchor,
+  #events-anchor {
+    position: relative;
+    top: -100px;
+  }
+  
+  .news {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .new-books,
+  .book-container,
+  .book-container2,
+  .pre-releases,
+  #spanish-books,
+  #english-books,
+  #french-books,
+  #ebooks-div,
+  #text-books {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .book-box {
+    position: relative;
+    display: flex !important;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    flex: 0 25%;
+    padding: 25px;
+    margin-bottom: 50px;
+  }
+  
+
+  /*-----------------HOMEPAGE EVENTS ------------*/
+  .events-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .event-box {
+    flex: 1 25%;
+    height: auto;
+    border: 30px solid transparent;
+    text-align: center;
+  }
+  
+  .event-box h2 {
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  .event-box p {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+  
+  .event-box img {
+    width: 100%;
+    height: 200px;
+  }
+
+  /*---------------------------------------------*/
+  /*-------------MEDIA QUERIES-------------------*/
+  /*---------------------------------------------*/
+  @media screen and (max-width: 1440px) {
+    #slider {
+      flex-direction: column;
+    }
+    
+    .slider-container {
+      width: 100%;
+      height: 400px;
+    }
+  
+    .slider-info-container  {
+      display: none;
+    }
+  
+    .event-box {
+      flex: 0 50%;
+    }
+  
+    .event-box img{
+      height: 100%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 870px) {
+
+    .new-books,
+    .book-container,
+    .book-container2,
+    .pre-releases,
+    #spanish-books,
+    #english-books,
+    #french-books,
+    #ebooks-div,
+    #text-books {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider-container{
+      margin-bottom: 20px;
+    }
+
+    .search-col-70 {
+      display: none;
+    }
+
+    .homepage-nav{
+      margin-top: -20px!important;
+    }
+  
+    .homepage-nav ul {
+      flex-direction: column;
+    }
+    
+    .homepage-nav ul li {
+      width: 100%;
+      padding: 10px 0;
+    }
+    
+    .homepage-nav ul li:first-child {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #fff;
+    }
+  
+    .homepage-nav ul li:nth-child(2) {
+      border-right: none;
+      border-bottom: 1px solid #fff;
+    }
+  
+    .event-box {
+      flex: 0 100%;
+    }
+  
+  }
+  @media screen and (max-width: 760px) {
+  
+    main{
+      width: 100% !important;
+    }
+  
+    #slider {
+      margin-top: 0;
+    }
+  
+    .categories-responsive {
+      display: block;
+    }
+  
+    .slider-container {
+      margin-top: 150px;
+    }
+  
+    nav .cliente-dropdown {
+      right: 150px !important;
+    }
+
+    #homepage-news {
+      margin-top: -200px !important;
+    }
+  
+  }
+
+  
+  @media screen and (max-width: 580px) {
+
+    .brand-col-10 {
+      display: none;
+    }
+    main #showcase {
+      height: 320px;
+    }
+    
+    .slider-container{
+      margin-bottom: 0;
+    }
+
+    #homepage-news {
+      margin-top: -250px !important;
+    }
+
+    .slider-container img,
+    .slider-arrow{
+      display: none;
+      background-color: transparent;
+    }
+  
+    main #showcase {
+      height: 290px;
+    }
+  
+    main #showcase h1 {
+      font-size: 2.6rem;
+    }
+  
+    .slider-imgs {
+      display: none;
+    }
+    
+    #homepage-news {
+      margin-top: -235px;
+    }
+  
+    .slider-container {
+      margin-top: 0;
+    }
+
+  }
+
+  

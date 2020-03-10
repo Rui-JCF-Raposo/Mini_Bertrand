@@ -1,0 +1,138 @@
+/*-----------------------------------------------*/
+/*-------------- CATEGORIES SECTION--------------*/
+/*-----------------------------------------------*/
+
+:root {
+  --main-orange: #df662a;
+  --main-gray: #e7e7e7;
+}
+  
+  .categories-col-10 {
+    position: fixed;
+    top: 78px;
+    height: 100%;
+    width: 270px;
+    background-color: var(--main-gray);
+    padding-top: 20px;
+  }
+  
+  #categories a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #categories h1{
+    width: 100%;
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 10px 30px;
+    margin: 0px;
+    cursor: pointer;
+  }
+  
+  
+  #categories ul {
+    padding:0;
+    list-style: none;
+  }
+  
+  #categories ul li {
+    width: 100%;
+    padding: 8px 0px 8px 35px;
+    margin: 4px 0;
+  }
+  
+  #categories ul li:hover,
+  #categories h1:hover {
+    background-color: rgb(210, 210, 210);
+  }
+  
+  #categories ul a {
+    padding: 5px 50px;
+    padding: 5px 100px 5px 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+  
+  .categories-hr {
+    width: 85%;
+    margin:-6px auto;
+    border: 1px solid rgb(210, 210, 210);
+  }
+  
+  aside .login-to-acess{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 30px;
+    background-color: var(--main-orange);
+    color: #fff;
+    margin-top: 20px;
+    border: 25px solid var(--main-gray);
+  }
+  
+  aside .login-to-acess button {
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+  
+  aside .login-to-acess button:hover {
+    background-color: var(--main-orange);
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+  /*---------------------------------------------*/
+  /*-------------RESPONSIVE CATEGORIES-----------*/
+  /*---------------------------------------------*/
+  
+  .categories-responsive {
+    position: fixed;
+    display: none;
+    width: 100%;
+    top: 84px;
+    z-index: 2;
+    padding: 15px;
+    background-color: var(--main-orange);
+  }
+  
+  .categories-responsive h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  
+  .hamburguer-menu{
+    margin-top: 10px;
+  
+    cursor: pointer;
+  }
+  
+  .hamburguer-menu div {
+    width: 50px;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: var(--main-gray);
+  }
+  
+  .d-block {
+    display: block !important;
+  }
+
+  #categories .active-category {
+    color: var(--main-orange) !important;
+  }
+
+  
+  
+ 

@@ -1,0 +1,16 @@
+<div class="clientList-showcase"></div>
+<section id="client-list">
+    <div class="container">
+        <p class="clientList-info">Estas são as suas listas de desejos, use e abuse. Adiciones-lhe os seus preferidos,
+            os indispensáveis, os essenciais , os desejados e partilhe-as com os seus amigos e família nas datas
+            especiais. Descubra <a href="#">como criar e gerir listas de desejos</a>. <b>Quando queremos muito um livro,
+                ele acontece.</b></p>
+        <div class="createNewList">
+            <button (click)="createNewList()"class="create-list-btn">CRIAR NOVA LISTA</button>
+            <img src="../../assets/icons/wishlist.svg" alt="wish list icon">
+        </div>
+        <div id="clientLists">
+            <app-list  *ngFor="let list of bookService.user[0].wishLists.lists" [listInfo]="list"></app-list>
+        </div> <!-- end client lists -->
+    </div> <!-- end container -->
+</section>

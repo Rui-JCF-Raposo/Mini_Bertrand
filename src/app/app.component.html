@@ -1,0 +1,23 @@
+<div class="container">
+  <!-- <app-warnings *ngIf="booksService.warningModalOpen"></app-warnings> -->
+  <app-add-to-list-modal *ngIf="booksService.addToListModalOpen"></app-add-to-list-modal>
+  <header>
+    <app-nav-menu></app-nav-menu>
+  </header>
+  <aside>
+    <app-nav-category></app-nav-category>
+  </aside>
+  <main [ngClass]="booksService.mainSelectorFix ? 'main-fix':none">
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+    <app-footer *ngIf="!booksService.homePage"></app-footer>
+  </footer>
+</div>
+
+<!--
+  
+  Fix the back to top arrow, because when we click on it it always go to the homePage Component
+  (On solution is to put the footer component inside each component html -> Didn't Work)
+
+-->

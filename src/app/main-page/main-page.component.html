@@ -1,0 +1,63 @@
+<main id="homepage-main" class="homepage-main-col-90">
+
+    <app-slider></app-slider>
+
+    <section id="homepage-news">
+        <div class="homepage-nav">
+            <ul>
+                <li><a href="#news-anchor">Novidades</a></li>
+                <li><a href="#pre-releases-anchor">Pré-Lançamentos</a></li>
+                <li><a href="#events-anchor">Eventos</a></li>
+            </ul>
+        </div> <!-- end homepage nav -->
+        <div class="news">
+            <div id="news-anchor"></div>
+            <h1>NOVIDADES</h1>
+            <div class="book-container">
+                <app-book *ngFor="let book of bookService.newBooks" [book]="book"></app-book>
+            </div>
+        </div> <!-- end homepage news -->
+        <div class="pre-release">
+            <div id="pre-releases-anchor"></div>
+            <h1>PRÉ-LANÇAMENTOS</h1>
+            <div class="book-container">
+                <app-book *ngFor="let book of bookService.preReleaseBooks" [book]="book"></app-book>
+            </div>
+        </div> <!-- end homepage pre-releases -->
+        <div class="events">
+            <div id="events-anchor"></div>
+            <h1>EVENTOS</h1>
+            <div class="events-wrapper">
+                <div class="event-box">
+                    <img src="../../assets/img/events-imgs/event-1.jpg" alt="banner de evento">
+                    <h2>FEIRA DE TROCA DE LIVROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sapiente sit assumenda illum,
+                        totam
+                        nihil odit vel, non consectetur modi nobis earum sint dolorem hic?</p>
+                </div>
+                <div class="event-box">
+                    <img src="../../assets/img/events-imgs/event-2.jpg" alt="banner de evento">
+                    <h2>LANÇAMENTO DE LIVROS EDUECE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sapiente sit assumenda illum,
+                        totam
+                        nihil odit vel, non consectetur modi nobis earum sint dolorem hic?</p>
+                </div>
+                <div class="event-box">
+                    <img src="../../assets/img/events-imgs/event-3.jpg" alt="banner de evento">
+                    <h2>FEIRA DO LIVRO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sapiente sit assumenda illum,
+                        totam
+                        nihil odit vel, non consectetur modi nobis earum sint dolorem hic?</p>
+                </div>
+                <div class="event-box">
+                    <img src="../../assets/img/events-imgs/event-4.jpg" alt="banner de evento">
+                    <h2>3ª FEIRA DE TROCA DE LIVROS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sapiente sit assumenda illum,
+                        totam
+                        nihil odit vel, non consectetur modi nobis earum sint dolorem hic?</p>
+                </div>
+            </div>
+        </div> <!-- end homepage events -->
+    </section>
+    <app-footer></app-footer>
+</main>

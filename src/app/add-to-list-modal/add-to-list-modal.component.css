@@ -1,0 +1,145 @@
+
+
+.add-to-list-modal header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+    width: 90%;
+}
+
+.close-add-modal{
+  cursor: pointer;
+}
+
+.modal-fix {
+  margin-top: 100px;
+}
+
+.modal-fix2 {
+  margin-top: -60px;
+}
+
+
+.brand {
+    display: flex;
+    text-align: center;
+  }
+  
+  .brand img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .brand h1{
+    font-size: 2.0rem;
+    margin: 0 0 -6px 10px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-family: 'Baskervville', serif;
+  }
+  
+  .brand span {
+    color: var(--main-orange);
+  }
+
+.add-modal {
+    position: fixed;
+    z-index: 99999;
+    width: 100vw;
+    height: 120vh;
+    background-color: var(--main-gray);
+    margin-top: -87px;
+  }
+  
+  .add-to-list-modal {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    max-width: 1000px;
+    min-height: 500px;
+    padding: 50px;
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 1px 3px 10px rgba(51, 51, 51, 0.399);
+  }
+  
+  .categories-body .add-to-list-modal header {
+    width: 90%;
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+  
+  .add-to-list-modal img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .add-to-list-modal p {
+    font-size: 1.6rem;
+    color: var(--main-orange);
+  }
+  
+  .add-to-list-modal .create-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .add-to-list-modal  h1 {
+    color: #333;
+  }
+  
+  
+  .create-new-list {
+    width: 400px;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .add-to-list-modal .create-new-list {
+    background-color: #fff;
+    border: 1px solid var(--main-orange);
+    color: var(--main-orange);
+  }
+  
+  .add-modal-brand {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;;
+  }
+  
+  .modal-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  
+  .modal-info img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .userLists {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  @media screen and (max-width: 760px) {
+    .modal-fix3{
+      margin-top: -160px;
+    }
+  }

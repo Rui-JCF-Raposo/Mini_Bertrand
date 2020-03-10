@@ -1,0 +1,35 @@
+<div class="shopcart-container">
+    <div class="shoppcart-book-box" *ngFor="let book of bookService.user[0].shopcart.books">
+        <div class="shoppcart-book-img">
+            <img src="{{book.thumbnailUrl}}">
+        </div>
+        <div class="book-box-info">
+            <div>
+                <dl>
+                    <dt class="shop-book-box-title">{{book.title}}</dt>
+                    <dd class="shop-book-box-price">{{book.price | currency:'€':'symbol'}}</dd>
+                </dl>
+            </div>
+            <div class="book-box-info2">
+                <div class="book-box-quantity-controls">
+                    <img (click)="bookService.shopcartQuantitySubtract(book)" class="minus-quantity" src="../../assets/icons/clientLoggenIn_Icons/shopCart/minus.svg"
+                        alt="minus icon">
+                    <span class="book-box-quanitity">{{book.quantity}}</span>
+                    <img (click)="bookService.shopcartQuantityAdd(book)" class="more-quantity" src="../../assets/icons/clientLoggenIn_Icons/shopCart/add.svg"
+                        alt="plus icon">
+                </div>
+                <span (click)="bookService.deleteBookFromShopcart(book)"class="shop-book-box-delete">
+                    <img src="../../assets/icons/clientLoggenIn_Icons/shopCart/delete.svg">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="shoppcart-footer" *ngIf="bookService.user[0].shopcart.books.length != 0">
+    <div class="shoppcart-total-info">
+        <span class="shoppcart-total-items"></span><span>ITENS/TOTAL</span>
+        <span class="shoppcart-total-price">{{ bookService.user[0].shopcart.totalPrice | currency: 'EUR'}}</span>
+    </div>
+    <button type="button" class="shoppcart-checkout">CHECKOUT</button>
+</div>

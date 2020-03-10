@@ -1,0 +1,32 @@
+<div class="test-list">
+    <header (click)="showHideList()">
+        <div class="list-name">{{listInfo.listName}} <span class="clientList-items">({{listInfo.listBooks.length}})</span>
+        </div>
+        <div class="openList-icon">
+            <img src="{{listArrowIndicator}}" alt="open list icon">
+        </div>
+    </header>
+    <div class="list-container" *ngIf="listOpen">
+        <div class="list-options">
+            <div>
+                <div (click)="editListName()" class="edit">
+                    <img src="../../assets/icons/clientList_Icons/pencil.svg" alt="edit icon">
+                </div>
+                <div (click)="removeList()"class="delete">
+                    <img src="../../assets/icons/clientList_Icons/recycle-bin.svg" alt="delete icon">
+                </div>
+            </div>
+            <div class="share-list">
+                <a href="#">
+                    <span>Partilhar a Lista</span>
+                    <img src="../../assets/icons/clientList_Icons/photo-symbol-to-share-with-right-arrow.svg"
+                        alt="share list icon">
+                </a>
+            </div>
+        </div>
+        <div class="list-books">
+            <app-wish-list-book *ngFor="let book of listInfo.listBooks" [wishListBookInfo]="book" [listOfTheBook]="listInfo.listName"></app-wish-list-book>
+        </div>
+    </div>
+    <!-- <div class="list-books"></div> -->
+</div> <!-- end test list -->

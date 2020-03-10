@@ -1,0 +1,212 @@
+/* You can add global styles to this file, and also import other style files */
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  :root {
+    --main-orange: #df662a;
+    --main-gray: #e7e7e7;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    
+  }
+
+  body {
+    margin: 0;
+  }
+  
+  aside {
+    border-right: 1px solid rgb(196, 196, 196);
+    box-shadow: -5px 0px 5px rgb(70, 70, 70);
+  }
+  
+  /*---------------------------------------------*/
+  /*-------------MEDIA QUERIES-------------------*/
+  /*---------------------------------------------*/
+  @media screen and (max-width: 1440px) {
+    #slider {
+      flex-direction: column;
+    }
+    
+    .slider-container {
+      width: 100%;
+      height: 400px;
+    }
+  
+    .slider-info-container  {
+      display: none;
+    }
+  
+    .event-box {
+      flex: 0 50%;
+    }
+  
+    .event-box img{
+      height: 100%;
+    }
+  
+    .footer-wrapper {
+      width: 100%;
+    }
+  
+    .footer-box {
+      flex: 1 25%;
+    }
+  
+    .search-col-70 {
+      flex: 1 30%;
+    }
+  
+  }
+  
+  @media screen and (max-width: 870px) {
+
+    .new-books,
+    .book-container,
+    .book-container2,
+    .pre-releases,
+    #spanish-books,
+    #english-books,
+    #french-books,
+    #ebooks-div,
+    #text-books {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .search-col-70 {
+      display: none;
+    }
+  
+    .homepage-nav ul {
+      flex-direction: column;
+    }
+    
+    .homepage-nav ul li {
+      width: 100%;
+      padding: 10px 0;
+    }
+    
+    .homepage-nav ul li:first-child {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #fff;
+    }
+  
+    .homepage-nav ul li:nth-child(2) {
+      border-right: none;
+      border-bottom: 1px solid #fff;
+    }
+  
+    .event-box {
+      flex: 0 100%;
+    }
+  
+    .footer-box {
+      text-align: center;
+    }
+  
+  }
+  
+  @media screen and (max-width: 760px) {
+    .categories-col-10 {
+      display: none;
+      width: 100%;
+      height: 400px;
+      margin-top: 76px;
+      z-index: 1;
+      box-shadow:  1px 3px 10px rgba(51, 51, 51, 0.475);
+    }
+  
+    main{
+      width: 100% !important;
+    }
+  
+    #slider {
+      margin-top: 0;
+    }
+  
+    .categories-responsive {
+      display: block;
+    }
+  
+    .slider-container {
+      margin-top: 150px;
+    }
+  
+    nav .cliente-dropdown {
+      right: 150px !important;
+    }
+  
+  }
+  
+  @media screen and (max-width: 580px) {
+    .brand-col-10 {
+      display: none;
+    }
+  
+    nav .cliente-dropdown {
+      right: 180px !important;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .menu-ajuda {
+      display: none;
+    }
+  
+    .login-confirm-icon {
+      left: 30px;
+    }
+  
+    main #showcase {
+      height: 320px;
+    }
+  
+    main #showcase h1 {
+      font-size: 4rem;
+    }
+  
+    nav .cliente-dropdown {
+      right: 110px !important;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    nav .cesto-dropdown {
+      right: 0;
+    }
+  
+    main #showcase {
+      height: 290px;
+    }
+  
+    main #showcase h1 {
+      font-size: 2.6rem;
+    }
+  
+    .slider-imgs {
+      display: none;
+    }
+    
+    #homepage-news {
+      margin-top: -235px;
+    }
+  
+    .slider-container {
+      margin-top: 0;
+    }
+  
+    nav .cliente-dropdown {
+      width: 100%;
+      right: 0 !important;
+    }
+  
+  }

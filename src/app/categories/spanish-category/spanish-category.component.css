@@ -1,0 +1,7 @@
+.categories-components {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 75%;
+  }

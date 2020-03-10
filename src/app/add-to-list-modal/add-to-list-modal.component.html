@@ -1,0 +1,28 @@
+<div [ngClass]="!bookService.homePage ? 'modal-fix2': none">
+    <div class="add-modal d-none" [ngClass]="!bookService.homePage ? 'modal-fix3': none">
+        <div class="add-to-list-modal">
+            <header [ngClass]="bookService.homePage ? 'modal-fix': none">
+                <div class="brand">
+                    <img src="../../assets/icons/logo/book.svg" alt="logo">
+                    <div class="brand-name">
+                        <h1>MYPROJECT</h1>
+                        <h1><span>Livreiros</span></h1>
+                    </div>
+                </div>
+                <div>
+                    <a (click)="hideAddToListModal()" class="close-add-modal">
+                        <img class="close-icon" src="../../assets/icons/close.svg" alt="close client area">
+                    </a>
+                </div>
+            </header> <!-- end header -->
+            <div class="modal-info">
+                <img src="../../assets/icons/clientLoggenIn_Icons/wish-list.svg" alt="">
+                <h1>ADICIONAR À LISTA DE DESEJOS</h1>
+            </div>
+            <div class="userLists">
+                <app-modal-lists *ngFor="let listInfo of bookService.user[0].wishLists.lists" [listInfo]="listInfo"></app-modal-lists>
+            </div>
+            <button (click)="createNewList()"class="create-new-list">CRIAR NOVA LISTA</button>
+        </div>
+    </div>
+</div>
